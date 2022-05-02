@@ -9,7 +9,6 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
-        'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:prettier/recommended',
         'plugin:import/recommended',
@@ -23,14 +22,7 @@ module.exports = {
             jsx: true,
         },
     },
-    plugins: [
-        'react',
-        'react-hooks',
-        '@typescript-eslint',
-        'prettier',
-        'jsx-a11y',
-        'import',
-    ],
+    plugins: ['react', '@typescript-eslint', 'prettier', 'jsx-a11y', 'import'],
     settings: {
         react: {
             version: 'detect',
@@ -62,10 +54,8 @@ module.exports = {
             },
         ],
         'prettier/prettier': 'error',
-        '@next/next/no-document-import-in-page': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
     ignorePatterns: ['node_modules'],
 }
